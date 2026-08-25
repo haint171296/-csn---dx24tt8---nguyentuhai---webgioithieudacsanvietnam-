@@ -2,5 +2,5 @@ Tuần 1.
 - Đã tạo GitHub Repository, bắt đàu viết và cập nhật Readme, đang liên hệ với giảng viên để collab
 Tuần 2.
 - Đã liên hệ để collab với giảng viên, tiếp tục viết Readme
-
-
+- Bắt đầu xây dựng trang. D**Dựng khung HTML**: tạo `index.html` với tiêu đề, thẻ mô tả, liên kết font và CSS; đặt header, thanh điều hướng, vùng nội dung động `<main id="app">` và footer. Phần khung này chỉ được tải một lần.
+- Chuẩn bị nội dung và dữ liệu**: xác định ba vùng miền, chọn ra 1 vài các món tiêu biểu

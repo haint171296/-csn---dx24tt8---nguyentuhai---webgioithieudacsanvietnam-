@@ -1,8 +1,30 @@
 # -csn---dx24tt8---nguyentuhai---webgioithieudacsanvietnam-
-Xây dựng ứng dụng web đơn trang ( SPA) giới thiệu món ăn đặc sản Việt Nam, Dữ liệu được lưu cục bộ trong `data.js`, không dùng framework hoặc cơ sở dữ liệu.
-***
-1. Định nghĩa
-Ứng dụng web đơn trang (Single Page Application – SPA) là ứng dụng web mà trình duyệt chỉ tải về một tài liệu HTML duy nhất trong suốt phiên làm việc. Mọi thao tác "chuyển trang" về sau (xem danh sách, xem chi tiết, tìm kiếm…) đều do JavaScript thực hiện bằng cách viết lại nội dung DOM ngay trên trang hiện tại và, nếu cần, nạp thêm dữ liệu (thường ở định dạng JSON) từ máy chủ hoặc từ tệp tĩnh — chứ không yêu cầu trình duyệt tải lại toàn bộ trang mới.
-Nói ngắn gọn: với SPA, "trang" không còn là một tệp HTML riêng trên máy chủ, mà là một trạng thái giao diện được JavaScript dựng nên bên trong một trang duy nhất.
-Các ứng dụng quen thuộc dùng mô hình SPA: Gmail, Google Maps, Facebook, Trello…
+# Đặc sản Việt Nam
 
+Website đơn trang giới thiệu các món ăn đặc sản của ba miền Việt Nam. Bài được xây dựng bằng HTML, CSS và JavaScript thuần, không dùng framework hoặc cơ sở dữ liệu.
+
+## Mục tiêu bài
+
+- Giới thiệu món ăn tiêu biểu của miền Bắc, miền Trung và miền Nam.
+- Cho phép người dùng tìm kiếm món ăn hoặc địa danh.
+- Lọc món ăn theo vùng miền.
+- Hiển thị thông tin chi tiết, câu chuyện và nguyên liệu của từng món.
+- Tổ chức nội dung trên một trang SPA, không tải lại toàn bộ trang khi chuyển nội dung.
+
+## Chức năng chính
+
+### Trang chủ
+
+Trang chủ có phần giới thiệu ẩm thực Việt Nam, ô tìm kiếm, bộ lọc vùng miền và danh sách món ăn. Danh sách được chia thành 8 món trên mỗi trang.
+
+### Tìm kiếm
+
+Từ khóa được chuẩn hóa bằng Unicode NFD nên có thể tìm kiếm tiếng Việt không dấu. Kết quả được đối chiếu với tên món, địa điểm, vùng miền và phần mô tả.
+
+### Lọc theo vùng miền
+
+Người dùng có thể xem toàn bộ món ăn hoặc chỉ xem món thuộc miền Bắc, miền Trung hay miền Nam.
+
+### Trang chi tiết
+
+Mỗi món ăn có một đường dẫn riêng dạng `#/mon/ten-mon`. Trang chi tiết hiển thị hình ảnh lớn, tên món, đánh giá, địa điểm, mô tả, câu chuyện và nguyên liệu nổi bật.

@@ -1,8 +1,15 @@
 # -csn---dx24tt8---nguyentuhai---webgioithieudacsanvietnam-
-# Đặc sản Việt Nam
+# Website giới thiệu món ăn đặc sản Việt Nam
 
-Website đơn trang giới thiệu các món ăn đặc sản của ba miền Việt Nam. Bài được xây dựng bằng HTML, CSS và JavaScript thuần, không dùng framework hoặc cơ sở dữ liệu.
+Website giới thiệu các món ăn đặc sản của ba miền Việt Nam. Bài được xây dựng bằng HTML, CSS và JavaScript thuần, không dùng framework hoặc cơ sở dữ liệu.
 
+ **Đồ án học phần Thực tập Đồ án Cơ sở ngành**
+ 
+ - Sinh viên: Nguyễn Tư Hải
+ - MSSV: 170124879
+ - Lớp: DX24TT8
+ - Khoa: Công Nghệ Thông Tin
+ - GVHD: Phạm Thị Trúc Mai
 ## Mục tiêu bài
 
 - Giới thiệu món ăn tiêu biểu của miền Bắc, miền Trung và miền Nam.
@@ -28,3 +35,15 @@ Người dùng có thể xem toàn bộ món ăn hoặc chỉ xem món thuộc m
 ### Trang chi tiết
 
 Mỗi món ăn có một đường dẫn riêng dạng `#/mon/ten-mon`. Trang chi tiết hiển thị hình ảnh lớn, tên món, đánh giá, địa điểm, mô tả, câu chuyện và nguyên liệu nổi bật.
+
+### Điều hướng SPA
+
+Ứng dụng dùng hash routing:
+
+| Đường dẫn | Nội dung |
+|---|---|
+| `#/` | Trang chủ, tìm kiếm, lọc và phân trang |
+| `#/mien-bac` | Danh sách đặc sản miền Bắc |
+| `#/mien-trung` | Danh sách đặc sản miền Trung |
+| `#/mien-nam` | Danh sách đặc sản miền Nam |
+| `#/mon/<id>` | Chi tiết một món ăn |

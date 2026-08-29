@@ -3,4 +3,8 @@ Tuần 1.
 Tuần 2.
 - Đã liên hệ để collab với giảng viên, tiếp tục viết Readme
 - Bắt đầu xây dựng trang. Dựng khung HTML: tạo `index.html` với tiêu đề, thẻ mô tả, liên kết font và CSS; đặt header, thanh điều hướng, vùng nội dung động `<main id="app">` và footer. Phần khung này chỉ được tải một lần.
-- Chuẩn bị nội dung và dữ liệu**: xác định ba vùng miền, chọn ra 1 vài các món tiêu biểu
+- Chuẩn bị nội dung và dữ liệu**: xác định ba vùng miền, chọn ra 1 vài các món tiêu biểu.
+- Lập danh sách món ăn, địa danh, mô tả, câu chuyện và nguyên liệu. Bắt đầu tìm kiếm hình ảnh để mô tả cho các món ăn, ban đầu tìm kiếm trên website Imgur nhưng kết quả cho ra không đa dạng, chuyển qua tìm kiếm với google ảnh.
+- Ban đầu sử dụng google drive để update hình ảnh và dẫn link tới web nhưng thất bại, web hiển thị hình ảnh bị lỗi.
+- Chuyển qua update hình ảnh lên twitter thì web đã hiển thị hình ảnh thành công.
+-

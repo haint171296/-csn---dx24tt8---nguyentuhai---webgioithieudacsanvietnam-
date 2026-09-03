@@ -7,4 +7,10 @@ Tuần 2.
 - Lập danh sách món ăn, địa danh, mô tả, câu chuyện và nguyên liệu. Bắt đầu tìm kiếm hình ảnh để mô tả cho các món ăn, ban đầu tìm kiếm trên website Imgur nhưng kết quả cho ra không đa dạng, chuyển qua tìm kiếm với google ảnh.
 - Ban đầu sử dụng google drive để update hình ảnh và dẫn link tới web nhưng thất bại, web hiển thị hình ảnh bị lỗi.
 - Chuyển qua update hình ảnh lên twitter thì web đã hiển thị hình ảnh thành công.
+Tuần 3.
+- Thiết kế giao diện | Hoàn thiện biến màu, typography, hero, thẻ món ăn, bộ lọc và trang chi tiết trong `style.css`.
+- Hoàn thiện tương tác | Xử lý tìm kiếm không dấu, lọc theo vùng miền, phân trang, render nội dung và điều hướng trong `app.js`.
+- Đã làm xong phần tìm kiếm không dấu, lọc ba miền và phân trang 8 món.
+- Tuần này cuối tuần có lịch trực ở công ty nên sẽ không có thời gian nhiều, dự định trong tuần sau sẽ bổ sung responsive cho màn hình mobile.
 -
+

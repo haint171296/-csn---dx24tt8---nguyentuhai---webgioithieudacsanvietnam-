@@ -47,3 +47,22 @@ Mỗi món ăn có một đường dẫn riêng dạng `#/mon/ten-mon`. Trang ch
 | `#/mien-trung` | Danh sách đặc sản miền Trung |
 | `#/mien-nam` | Danh sách đặc sản miền Nam |
 | `#/mon/<id>` | Chi tiết một món ăn |
+
+## Cấu trúc thư mục
+
+```text
+am-thuc-viet-nam/
+├── index.html   # Khung HTML chính của website
+├── style.css    # Toàn bộ giao diện desktop
+├── app.js       # Router, render giao diện, tìm kiếm, lọc và phân trang
+├── data.js      # Dữ liệu 18 món đặc sản ba miền
+└── README.md    # Tài liệu của bài
+```
+
+## Công nghệ sử dụng
+
+- **HTML5**: xây dựng cấu trúc ngữ nghĩa gồm header, main, article và footer.
+- **CSS3**: thiết kế giao diện desktop bằng Flexbox, Grid, biến CSS và hiệu ứng hover.
+- **JavaScript thuần**: xử lý DOM, sự kiện, hash routing, tìm kiếm, lọc và phân trang.
+- **Dữ liệu JavaScript**: danh sách món ăn được khai báo trong `data.js` dưới dạng mảng object.
+- **Google Fonts**: sử dụng Be Vietnam Pro và Playfair Display cho nội dung tiếng Việt.

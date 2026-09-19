@@ -66,3 +66,44 @@ am-thuc-viet-nam/
 - **JavaScript thuần**: xử lý DOM, sự kiện, hash routing, tìm kiếm, lọc và phân trang.
 - **Dữ liệu JavaScript**: danh sách món ăn được khai báo trong `data.js` dưới dạng mảng object.
 - **Google Fonts**: sử dụng Be Vietnam Pro và Playfair Display cho nội dung tiếng Việt.
+
+## Cách chạy
+
+### Mở trực tiếp
+
+Nháy đúp vào file `index.html` để mở website trên trình duyệt.
+
+### Dùng Live Server trong VS Code
+
+1. Mở thư mục `haint` bằng VS Code.
+2. Nhấn chuột phải vào `index.html`.
+3. Chọn **Open with Live Server**.
+
+### Dùng máy chủ tĩnh bằng Python
+
+Mở Terminal tại thư mục dự án và chạy:
+
+```bash
+python -m http.server 8000
+```
+
+Sau đó truy cập `http://localhost:8000`.
+
+## Luồng hoạt động
+
+1. Trình duyệt tải `index.html`, `style.css`, `data.js` và `app.js`.
+2. `app.js` đọc hash hiện tại để xác định nội dung cần hiển thị.
+3. Các hàm render ghi giao diện vào vùng `<main id="app">`.
+4. Khi người dùng tìm kiếm, lọc, chuyển trang hoặc mở món ăn, JavaScript cập nhật nội dung mà không tải lại tài liệu HTML.
+
+## Phạm vi giao diện
+
+Phiên bản hiện tại được tối ưu cho màn hình desktop: menu điều hướng luôn hiển thị, danh sách món ăn dùng bố cục 4 cột và trang chi tiết dùng bố cục hai cột với hình ảnh lớn. Giao diện mobile không nằm trong phạm vi của bài.
+
+## Hướng phát triển
+
+- Bổ sung giá tham khảo và địa chỉ quán ăn.
+- Thêm chức năng yêu thích món ăn bằng Local Storage.
+- Bổ sung dữ liệu JSON riêng hoặc kết nối API.
+- Thêm sắp xếp theo tên và đánh giá.
+- Bổ sung hình ảnh cục bộ để website hoạt động ổn định khi không có Internet.

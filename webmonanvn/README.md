@@ -54,7 +54,7 @@ webmonanvn/
 ## Công nghệ sử dụng
 
 - **HTML5**: xây dựng cấu trúc ngữ nghĩa gồm header, main, article và footer.
-- **CSS3**: thiết kế giao diện desktop bằng Flexbox, Grid, biến CSS và hiệu ứng hover.
+- **CSS3**: thiết kế giao diện bằng Flexbox, Grid, biến CSS, hiệu ứng hover và Media Queries cho responsive.
 - **JavaScript thuần**: xử lý DOM, sự kiện, hash routing, tìm kiếm, lọc và phân trang.
 - **Dữ liệu JavaScript**: danh sách món ăn được khai báo trong `data.js` dưới dạng mảng object.
 - **Google Fonts**: sử dụng Be Vietnam Pro và Playfair Display cho nội dung tiếng Việt.
@@ -88,9 +88,21 @@ Sau đó truy cập `http://localhost:8000`.
 3. Các hàm render ghi giao diện vào vùng `<main id="app">`.
 4. Khi người dùng tìm kiếm, lọc, chuyển trang hoặc mở món ăn, JavaScript cập nhật nội dung mà không tải lại tài liệu HTML.
 
-## Phạm vi giao diện
+## Khả năng đáp ứng giao diện (Responsive)
 
-Phiên bản hiện tại được tối ưu cho màn hình desktop: menu điều hướng luôn hiển thị, danh sách món ăn dùng bố cục 4 cột và trang chi tiết dùng bố cục hai cột với hình ảnh lớn. Giao diện mobile không nằm trong phạm vi của bài.
+Website đã hỗ trợ responsive đầy đủ trên cả ba nhóm kích thước màn hình: máy tính, máy tính bảng và điện thoại di động. Menu điều hướng, danh sách món ăn (dạng lưới) và trang chi tiết (bố cục hai cột) đều tự động điều chỉnh theo chiều rộng màn hình.
+
+## Ghi chú về hình ảnh
+
+Hình ảnh món ăn hiện được tham chiếu bằng đường dẫn (URL) trực tiếp trong `data.js`, không lưu trong thư mục dự án. Trong quá trình thực hiện, nhóm đã thử lưu ảnh trên Google Drive và dẫn liên kết vào web nhưng ảnh không hiển thị được; giải pháp hiện tại là đăng ảnh lên nền tảng X (Twitter) và dùng liên kết ảnh trực tiếp từ đó. Đây là giải pháp tạm thời, có thể mất ổn định nếu nguồn ảnh thay đổi hoặc bị gỡ.
+
+## Hạn chế hiện tại
+
+- Dữ liệu được lưu tĩnh trong `data.js`, muốn thêm/sửa món ăn phải chỉnh sửa trực tiếp mã nguồn.
+- Hình ảnh phụ thuộc vào liên kết ngoài (xem mục Ghi chú về hình ảnh ở trên).
+- Chưa có trang quản trị nội dung.
+- Chưa hỗ trợ đa ngôn ngữ.
+- Chưa có giá tham khảo và địa chỉ quán ăn cụ thể cho từng món.
 
 ## Hướng phát triển
 
@@ -98,4 +110,4 @@ Phiên bản hiện tại được tối ưu cho màn hình desktop: menu điề
 - Thêm chức năng yêu thích món ăn bằng Local Storage.
 - Bổ sung dữ liệu JSON riêng hoặc kết nối API.
 - Thêm sắp xếp theo tên và đánh giá.
-- Bổ sung hình ảnh cục bộ để website hoạt động ổn định khi không có Internet.
+- Bổ sung hình ảnh cục bộ để website hoạt động ổn định khi không có Internet hoặc khi nguồn ảnh bên ngoài thay đổi.

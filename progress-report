@@ -1,16 +1,16 @@
-# BÁO CÁO TIẾN ĐỘ
+BÁO CÁO TIẾN ĐỘ
 
-## Thông tin chung
+Thông tin chung
 
-- **Tên đề tài:** Xây dựng ứng dụng web đơn trang giới thiệu món ăn đặc sản Việt Nam
-- **Sinh viên:** Nguyễn Tư Hải
-- **Lớp**: DX24TT8
+- Tên đề tài: Xây dựng ứng dụng web đơn trang giới thiệu món ăn đặc sản Việt Nam
+- Sinh viên: Nguyễn Tư Hải
+- Lớp: DX24TT8
 
-## Tuần 1: Khảo sát và xây dựng nền tảng SPA
+	Tuần 1: Khảo sát và xây dựng nền tảng SPA
 
-- **Thời gian:** 16/08/2026 - 22/08/2026
-- **Mục tiêu:** Tìm hiểu kiến trúc SPA và xây dựng nền tảng ban đầu cho dự án.
-- **Công việc thực hiện:**
+- Thời gian: 16/08/2026 - 22/08/2026
+- Mục tiêu: Tìm hiểu kiến trúc SPA và xây dựng nền tảng ban đầu cho dự án.
+- Công việc thực hiện:
 	- Tạo GitHub Repository cho đồ án.
 	- Bắt đầu viết và cập nhật file `README.md`.
 	- Liên hệ với giảng viên để thực hiện cộng tác vào repository.
@@ -18,15 +18,15 @@
     - Xác định đối tượng sử dụng và nội dung cần giới thiệu.
 	- Khởi tạo cấu trúc thư mục và các file tĩnh HTML, CSS, JS.
 	- Xây dựng hệ thống router cơ bản bằng hash URL và sự kiện `hashchange`.
-- **Kết quả:** Hoàn thành repository, bước đầu hoàn thiện tài liệu và tạo được cấu trúc dự án với định tuyến cơ bản.
-- **Khó khăn:** Cần làm quen với cách cập nhật nội dung mà không tải lại toàn bộ trang.
-- **Kế hoạch tuần sau:** Tạo dữ liệu mock và xây dựng giao diện trang chủ.
+- Kết quả: Hoàn thành repository, bước đầu hoàn thiện tài liệu và tạo được cấu trúc dự án với định tuyến cơ bản.
+- Khó khăn: Cần làm quen với cách cập nhật nội dung mà không tải lại toàn bộ trang.
+- Kế hoạch tuần sau: Tạo dữ liệu mock và xây dựng giao diện trang chủ.
 
-## Tuần 2: Chuẩn bị dữ liệu và giao diện trang chủ
+	Tuần 2: Chuẩn bị dữ liệu và giao diện trang chủ
 
-- **Thời gian:** 23/08/2026 - 31/08/2026
-- **Mục tiêu:** Chuẩn bị dữ liệu đặc sản và hoàn thiện giao diện trang chủ ban đầu.
-- **Công việc thực hiện:**
+- Thời gian: 23/08/2026 - 31/08/2026
+- Mục tiêu: Chuẩn bị dữ liệu đặc sản và hoàn thiện giao diện trang chủ ban đầu.
+- Công việc thực hiện:
 	- Liên hệ để cộng tác với giảng viên và tiếp tục cập nhật `README.md`.
 	- Bắt đầu xây dựng trang web.
 	- Dựng khung HTML trong `index.html` gồm tiêu đề, thẻ mô tả, liên kết font và CSS.
@@ -39,51 +39,51 @@
     - Thiết kế giao diện trong `style.css`.
 	- Hoàn thiện biến màu, typography, hero, thẻ món ăn, bộ lọc và trang chi tiết.
 	- Hoàn thiện giao diện trang chủ.
-- **Kết quả:** Có dữ liệu mẫu, khung HTML và giao diện trang chủ với hình ảnh minh họa để phát triển các chức năng tiếp theo.
-- **Khó khăn:**
+- Kết quả: Có dữ liệu mẫu, khung HTML và giao diện trang chủ với hình ảnh minh họa để phát triển các chức năng tiếp theo.
+- Khó khăn:
     - Thử tìm hình ảnh trên Imgur nhưng kết quả chưa đa dạng nên chuyển sang tìm kiếm bằng Google Images.
     - Thử lưu và dẫn liên kết hình ảnh từ Google Drive nhưng hình ảnh không hiển thị trên website.
     - Sau đó chuyển sang đăng hình ảnh lên nền tảng X (Twitter) và sử dụng liên kết trực tiếp; hình ảnh đã hiển thị thành công.
     - Cần thống nhất cấu trúc dữ liệu cho các món ăn thuộc nhiều khu vực khác nhau.
-- **Kế hoạch tuần sau:** Render danh sách đặc sản ra trang chủ bằng DOM API.
+- Kế hoạch tuần sau: Render danh sách đặc sản ra trang chủ bằng DOM API.
 
-## Tuần 3: Render danh sách đặc sản
+	Tuần 3: Render danh sách đặc sản
 
-- **Thời gian:** 03/09/2026 - 05/09/2026
-- **Mục tiêu:** Hiển thị dữ liệu đặc sản động trên trang chủ.
-- **Công việc thực hiện:**
+- Thời gian: 03/09/2026 - 05/09/2026
+- Mục tiêu: Hiển thị dữ liệu đặc sản động trên trang chủ.
+- Công việc thực hiện:
 	- Lập trình render danh sách đặc sản ra trang chủ bằng DOM API.
 	- Hoàn thiện tương tác trong `app.js`.
 	- Xử lý tìm kiếm không dấu.
 	- Tích hợp lọc món ăn theo ba vùng miền.
 	- Xây dựng phân trang với 8 món ăn trên mỗi trang.
-- **Kết quả:** Danh sách đặc sản được lấy từ dữ liệu mock và hiển thị trực tiếp trên giao diện; các chức năng tìm kiếm không dấu, lọc ba miền và phân trang đã hoạt động.
-- **Khó khăn:** Cần bảo đảm dữ liệu được render đúng và không làm ảnh hưởng đến bố cục trang.
-- **Kế hoạch tuần sau:** Xây dựng trang chi tiết và chức năng lọc theo khu vực địa lý.
-- **Ghi chú:** Do lịch cá nhân bận trong tuần nên tiến độ có phần chậm lại; phần responsive cho di động bị delay.
+- Kết quả: Danh sách đặc sản được lấy từ dữ liệu mock và hiển thị trực tiếp trên giao diện; các chức năng tìm kiếm không dấu, lọc ba miền và phân trang đã hoạt động.
+- Khó khăn: Cần bảo đảm dữ liệu được render đúng và không làm ảnh hưởng đến bố cục trang.
+- Kế hoạch tuần sau: Xây dựng trang chi tiết và chức năng lọc theo khu vực địa lý.
+- Ghi chú: Do lịch cá nhân bận trong tuần nên tiến độ có phần chậm lại; phần responsive cho di động bị delay.
 
-## Tuần 4: Trang chi tiết và lọc theo khu vực
+	Tuần 4: Trang chi tiết và lọc theo khu vực
 
-- **Thời gian:** 06/09/2026 - 12/09/2026
-- **Mục tiêu:** Bổ sung trang chi tiết và chức năng lọc đặc sản.
-- **Công việc thực hiện:**
+- Thời gian: 06/09/2026 - 12/09/2026
+- Mục tiêu: Bổ sung trang chi tiết và chức năng lọc đặc sản.
+- Công việc thực hiện:
 	- Xây dựng giao diện và logic render nội dung trang chi tiết.
 	- Tích hợp chức năng lọc đặc sản theo khu vực địa lý.
-- **Kết quả:** Người dùng có thể xem thông tin chi tiết và lọc các món ăn theo khu vực.
-- **Khó khăn:** Cần kết nối đúng mã món ăn giữa danh sách và trang chi tiết.
-- **Kế hoạch tuần sau:** Xử lý tham số URL và tối ưu giao diện responsive.
+- Kết quả: Người dùng có thể xem thông tin chi tiết và lọc các món ăn theo khu vực.
+- Khó khăn: Cần kết nối đúng mã món ăn giữa danh sách và trang chi tiết.
+- Kế hoạch tuần sau: Xử lý tham số URL và tối ưu giao diện responsive.
 
-## Tuần 5: Xử lý URL và tối ưu giao diện
+	Tuần 5: Xử lý URL và tối ưu giao diện
 
-- **Thời gian:** 13/09/2026 - 19/09/2026
-- **Mục tiêu:** Hoàn thiện việc chuyển trang và cải thiện trải nghiệm sử dụng.
-- **Công việc thực hiện:**
+- Thời gian: 13/09/2026 - 19/09/2026
+- Mục tiêu: Hoàn thiện việc chuyển trang và cải thiện trải nghiệm sử dụng.
+- Công việc thực hiện:
     - Xử lý lỗi bắt tham số URL khi chuyển trang.
 	- Tối ưu giao diện responsive và thêm hiệu ứng.
 	- Bổ sung bố cục cho tablet và mobile.
 	- Kiểm tra hình ảnh, `alt` text, tiêu đề, thao tác bằng bàn phím, trạng thái rỗng và các đường dẫn lỗi.
     - - Chỉnh sửa những lỗi đã phát hiện trong `README.md`.
 	- Upload source code lên GitHub.
-- **Kết quả:** Việc chuyển trang và nhận tham số URL ổn định hơn; giao diện hoạt động tốt trên nhiều kích thước màn hình và có trải nghiệm truy cập đầy đủ.
-- **Khó khăn:** Cần xử lý các trường hợp URL thiếu hoặc sai tham số.
-- **Kế hoạch tuần sau:** Cải thiện hiệu suất, cập nhật tài liệu và tổng kết đồ án.
+- Kết quả: Việc chuyển trang và nhận tham số URL ổn định hơn; giao diện hoạt động tốt trên nhiều kích thước màn hình và có trải nghiệm truy cập đầy đủ.
+- Khó khăn: Cần xử lý các trường hợp URL thiếu hoặc sai tham số.
+- Kế hoạch tuần sau: Cải thiện hiệu suất, cập nhật tài liệu và tổng kết đồ án.

@@ -152,4 +152,3 @@ http://localhost:8000
 - Khái niệm về Single Page Application (SPA).
 - Hash routing trong ứng dụng web đơn trang.
 - Cách lưu trữ và xử lý dữ liệu tĩnh bằng JavaScript/JSON.
-

@@ -37,10 +37,10 @@ Single Page Application (SPA) là kiểu ứng dụng web trong đó người d�
 
 ### 3.3 Công nghệ sử dụng
 
-- HTML5: xây dựng cấu trúc giao diện.
-- CSS3: thiết kế bố cục, kiểu chữ, màu sắc, hiệu ứng và tương thích mobile.
-- JavaScript: xử lý sự kiện, render dữ liệu, tìm kiếm, lọc, phân trang và routing.
-- JavaScript Object / JSON: lưu trữ dữ liệu món ăn.
+- **HTML5**: xây dựng cấu trúc giao diện.
+- **CSS3**: thiết kế bố cục, kiểu chữ, màu sắc, hiệu ứng và tương thích mobile.
+- **JavaScript**: xử lý sự kiện, render dữ liệu, tìm kiếm, lọc, phân trang và routing.
+- **JavaScript Object / JSON**: lưu trữ dữ liệu món ăn.
 
 > Không sử dụng framework, không sử dụng cơ sở dữ liệu, không dùng backend, phù hợp với mục tiêu xây dựng demo web SPA thuần.
 

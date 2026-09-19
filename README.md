@@ -1,122 +1,167 @@
 # -csn---dx24tt8---nguyentuhai---webgioithieudacsanvietnam-
-# Website giới thiệu món ăn đặc sản Việt Nam
+# Đồ án: Xây dựng ứng dụng web đơn trang giới thiệu món ăn đặc sản Việt Nam
 
 Website giới thiệu các món ăn đặc sản của ba miền Việt Nam. Bài được xây dựng bằng HTML, CSS và JavaScript thuần, không dùng framework hoặc cơ sở dữ liệu.
 
- **Đồ án học phần Thực tập Đồ án Cơ sở ngành**
- 
- - Sinh viên: Nguyễn Tư Hải
- - MSSV: 170124879
- - Lớp: DX24TT8
- - Ngành: Công Nghệ Thông Tin
- - GVHD: Phạm Thị Trúc Mai
-## Mục tiêu bài
+## Thông tin sinh viên
 
-- Giới thiệu món ăn tiêu biểu của miền Bắc, miền Trung và miền Nam.
-- Cho phép người dùng tìm kiếm món ăn hoặc địa danh.
-- Lọc món ăn theo vùng miền.
-- Hiển thị thông tin chi tiết, câu chuyện và nguyên liệu của từng món.
-- Tổ chức nội dung trên một trang SPA, không tải lại toàn bộ trang khi chuyển nội dung.
-
-## Chức năng chính
-
-### Trang chủ
-
-Trang chủ có phần giới thiệu ẩm thực Việt Nam, ô tìm kiếm, bộ lọc vùng miền và danh sách món ăn. Danh sách được chia thành 8 món trên mỗi trang.
-
-### Tìm kiếm
-
-Từ khóa được chuẩn hóa bằng Unicode NFD nên có thể tìm kiếm tiếng Việt không dấu. Kết quả được đối chiếu với tên món, địa điểm, vùng miền và phần mô tả.
-
-### Lọc theo vùng miền
-
-Người dùng có thể xem toàn bộ món ăn hoặc chỉ xem món thuộc miền Bắc, miền Trung hay miền Nam.
-
-### Trang chi tiết
-
-Mỗi món ăn có một đường dẫn riêng dạng `#/mon/ten-mon`. Trang chi tiết hiển thị hình ảnh lớn, tên món, đánh giá, địa điểm, mô tả, câu chuyện và nguyên liệu nổi bật.
-
-### Điều hướng SPA
-
-Ứng dụng dùng hash routing:
-
-| Đường dẫn | Nội dung |
+| Thông tin | Chi tiết |
 |---|---|
-| `#/` | Trang chủ, tìm kiếm, lọc và phân trang |
-| `#/mien-bac` | Danh sách đặc sản miền Bắc |
-| `#/mien-trung` | Danh sách đặc sản miền Trung |
-| `#/mien-nam` | Danh sách đặc sản miền Nam |
-| `#/mon/<id>` | Chi tiết một món ăn |
+| Họ và tên | Nguyễn Tư Hải |
+| MSSV | 170124879 |
+| Lớp | DX24TT8 |
+| Ngành | Công Nghệ Thông Tin |
+| GVHD | Phạm Thị Trúc Mai |
 
-## Cấu trúc thư mục
+## 1. Giới thiệu đề tài
+
+Đề tài nghiên cứu và xây dựng ứng dụng web đơn trang (Single Page Application - SPA) giới thiệu các món ăn đặc sản nổi tiếng của Việt Nam. Ứng dụng này được phát triển bằng HTML, CSS và JavaScript thuần, không sử dụng framework hay cơ sở dữ liệu. Mục tiêu của đề tài là minh họa nguyên lý hoạt động của SPA, đồng thời xây dựng một sản phẩm demo có tính tương tác cao, thân thiện với người dùng và phù hợp với mục tiêu học tập, nghiên cứu và trình bày trong môi trường đại học.
+
+## 2. Lý do chọn đề tài
+
+Việt Nam là quốc gia có nền ẩm thực phong phú và đa dạng về vùng miền. Mỗi vùng miền đều sở hữu những món ăn đặc trưng mang bản sắc văn hóa riêng. Tuy nhiên, việc giới thiệu và tìm hiểu các món ăn đặc sản trên web thường bị giới hạn bởi cách trình bày chưa trực quan hoặc thiếu tính tương tác. Vì vậy, đề tài này nhằm xây dựng một ứng dụng web đơn trang cho phép người dùng dễ dàng quan sát, tìm kiếm và khám phá thông tin về các món ăn đặc sản của ba miền Bắc - Trung - Nam.
+
+## 3. Tổng quan về ứng dụng web đơn trang (SPA)
+
+### 3.1 Định nghĩa
+
+Single Page Application (SPA) là kiểu ứng dụng web trong đó người dùng chỉ tương tác trên một trang HTML duy nhất. Khi thực hiện các hành động như tìm kiếm, lọc dữ liệu hoặc chuyển đổi nội dung, giao diện sẽ được cập nhật bằng JavaScript mà không cần tải lại toàn bộ trang.
+
+### 3.2 Nguyên lý hoạt động
+
+- Trình duyệt chỉ tải một trang HTML chính.
+- JavaScript chịu trách nhiệm cập nhật DOM theo sự kiện người dùng.
+- Dữ liệu có thể được lưu trong biến JavaScript hoặc file JSON.
+- Hệ thống điều hướng được thực hiện qua hash URL như `#/mien-bac` hoặc `#/mon/pho-ha-noi`.
+- Việc cập nhật nội dung diễn ra trên cùng một trang, giúp trải nghiệm nhanh hơn và mượt hơn.
+
+### 3.3 Công nghệ sử dụng
+
+- HTML5: xây dựng cấu trúc giao diện.
+- CSS3: thiết kế bố cục, kiểu chữ, màu sắc, hiệu ứng và tương thích mobile.
+- JavaScript: xử lý sự kiện, render dữ liệu, tìm kiếm, lọc, phân trang và routing.
+- JavaScript Object / JSON: lưu trữ dữ liệu món ăn.
+
+> Không sử dụng framework, không sử dụng cơ sở dữ liệu, không dùng backend, phù hợp với mục tiêu xây dựng demo web SPA thuần.
+
+## 4. Mục tiêu của đề tài
+
+- Nghiên cứu và ứng dụng nguyên lý hoạt động của một SPA.
+- Xây dựng giao diện web đơn trang hiệu quả, dễ sử dụng và thân thiện với người dùng.
+- Giới thiệu các món ăn đặc sản Việt Nam theo từng vùng miền.
+- Hỗ trợ tìm kiếm, lọc dữ liệu và xem thông tin chi tiết từng món ăn.
+- Tạo ra sản phẩm demo phù hợp để học tập, trình bày và đánh giá kỹ năng lập trình web.
+
+## 5. Yêu cầu chức năng
+
+Ứng dụng demo cần đảm bảo các chức năng chính sau:
+
+- Trang chủ hiển thị danh sách món ăn nổi bật.
+- Phân trang danh sách món ăn.
+- Trang đặc sản theo từng vùng miền: Miền Bắc, Miền Trung, Miền Nam.
+- Xem chi tiết thông tin từng món ăn.
+- Tìm kiếm món ăn theo tên, địa điểm hoặc mô tả.
+- Lọc dữ liệu theo vùng miền.
+- Điều hướng giữa các màn hình trên cùng một trang mà không tải lại toàn bộ trang.
+
+## 6. Phân tích chức năng hệ thống
+
+### 6.1 Trang chủ
+
+Trang chủ là nơi giới thiệu tổng quan về ẩm thực Việt Nam. Giao diện gồm banner chào mừng, ô tìm kiếm, bộ lọc vùng miền và danh sách món ăn. Mỗi trang hiển thị một số lượng món ăn nhất định để đảm bảo bố cục rõ ràng và dễ xem.
+
+### 6.2 Trang vùng miền
+
+Mỗi vùng miền có một màn hình riêng được định tuyến theo URL hash:
+
+- `#/mien-bac`
+- `#/mien-trung`
+- `#/mien-nam`
+
+Mỗi trang đều hiển thị các món ăn thuộc vùng tương ứng, giúp người dùng dễ dàng phân biệt đặc trưng ẩm thực của từng miền.
+
+### 6.3 Trang chi tiết món ăn
+
+Khi người dùng chọn một món ăn, ứng dụng chuyển đến địa chỉ dạng:
+
+- `#/mon/<id>`
+
+Trang chi tiết hiển thị các thông tin như: tên món, hình ảnh, vùng miền, địa điểm, mô tả, câu chuyện món ăn, nguyên liệu và đánh giá.
+
+### 6.4 Tìm kiếm và lọc dữ liệu
+
+- Tìm kiếm theo từ khóa tiếng Việt không dấu.
+- Lọc theo vùng miền để giới hạn kết quả hiển thị.
+- Có thể mở rộng thêm lọc theo loại món ăn hoặc tiêu chí khác trong tương lai.
+
+## 7. Cấu trúc dự án
 
 ```text
 webmonanvn/
-├── index.html   # Khung HTML chính của website
-├── style.css    # Toàn bộ giao diện desktop
-├── app.js       # Router, render giao diện, tìm kiếm, lọc và phân trang
-├── data.js      # Dữ liệu 18 món đặc sản ba miền
-└── README.md    # Tài liệu của bài
+├── index.html     # File HTML chứa cấu trúc giao diện chính
+├── style.css      # File CSS định nghĩa giao diện và responsive
+├── app.js         # Logic SPA: router, render, tìm kiếm, lọc, phân trang
+├── data.js        # Dữ liệu món ăn được lưu dưới dạng JavaScript object
+├── README.md      # Tài liệu mô tả đề tài và hướng dẫn sử dụng
+└── assets/        # Thư mục bổ sung tài nguyên, hình ảnh hoặc tài liệu khác
 ```
 
-## Công nghệ sử dụng
+## 8. Công nghệ và kỹ thuật triển khai
 
-- **HTML5**: xây dựng cấu trúc ngữ nghĩa gồm header, main, article và footer.
-- **CSS3**: thiết kế giao diện bằng Flexbox, Grid, biến CSS, hiệu ứng hover và Media Queries cho responsive.
-- **JavaScript thuần**: xử lý DOM, sự kiện, hash routing, tìm kiếm, lọc và phân trang.
-- **Dữ liệu JavaScript**: danh sách món ăn được khai báo trong `data.js` dưới dạng mảng object.
-- **Google Fonts**: sử dụng Be Vietnam Pro và Playfair Display cho nội dung tiếng Việt.
+- **HTML5**: xây dựng cấu trúc giao diện.
+- **CSS3**: định dạng layout, hiệu ứng, màu sắc và responsive design.
+- **JavaScript**: xử lý logic, DOM, routing và tương tác người dùng.
+- **JavaScript Object / JSON**: lưu trữ dữ liệu món ăn.
+- **Google Fonts**: sử dụng font chữ phù hợp với giao diện ẩm thực.
 
-## Cách chạy
+## 9. Ưu điểm của giải pháp
 
-### Mở trực tiếp
+- Không cần framework, dễ học và triển khai.
+- Phù hợp với bài tập, đồ án và dự án cá nhân.
+- Cho thấy rõ nguyên lý hoạt động của ứng dụng web đơn trang.
+- Dễ mở rộng khi cần bổ sung dữ liệu hoặc chức năng mới.
+- Không phụ thuộc vào backend hoặc cơ sở dữ liệu.
 
-Nháy đúp vào file `index.html` để mở website trên trình duyệt.
+## 10. Hạn chế của demo
 
-### Dùng Live Server trong VS Code
+- Dữ liệu hiện đang được lưu cứng trong JavaScript, nên khó quản lý nếu số lượng món ăn tăng lên nhiều.
+- Hình ảnh phụ thuộc vào URL bên ngoài, nên có thể bị ảnh hưởng bởi mạng hoặc sự thay đổi nguồn dữ liệu.
+- Chưa tích hợp backend, không có quản trị dữ liệu động.
 
-1. Mở thư mục `webmonanvn` bằng VS Code.
+## 11. Hướng dẫn chạy dự án
+
+### 11.1 Mở trực tiếp
+
+Nhấp đúp chuột vào file `index.html` để mở ứng dụng trong trình duyệt.
+
+### 11.2 Dùng Live Server trong VS Code
+
+1. Mở thư mục dự án trong VS Code.
 2. Nhấn chuột phải vào `index.html`.
 3. Chọn **Open with Live Server**.
 
-### Dùng máy chủ tĩnh bằng Python
+### 11.3 Chạy bằng máy chủ tĩnh Python
 
-Mở Terminal tại thư mục dự án và chạy:
+Mở Terminal trong thư mục dự án và chạy lệnh sau:
 
 ```bash
 python -m http.server 8000
 ```
 
-Sau đó truy cập `http://localhost:8000`.
+Sau đó truy cập địa chỉ:
 
-## Luồng hoạt động
+```text
+http://localhost:8000
+```
 
-1. Trình duyệt tải `index.html`, `style.css`, `data.js` và `app.js`.
-2. `app.js` đọc hash hiện tại để xác định nội dung cần hiển thị.
-3. Các hàm render ghi giao diện vào vùng `<main id="app">`.
-4. Khi người dùng tìm kiếm, lọc, chuyển trang hoặc mở món ăn, JavaScript cập nhật nội dung mà không tải lại tài liệu HTML.
+## 12. Kết luận
 
-## Khả năng đáp ứng giao diện (Responsive)
+Đề tài này đã xây dựng thành công một ứng dụng web đơn trang giới thiệu các món ăn đặc sản Việt Nam theo đúng nguyên lý của SPA thuần. Dự án không sử dụng framework hay cơ sở dữ liệu, mà tập trung vào việc ứng dụng HTML, CSS, JavaScript và dữ liệu dạng JavaScript Object/JSON để tạo ra một sản phẩm web tương tác, trực quan và phù hợp cho mục tiêu học tập và báo cáo đồ án đại học.
 
-Website đã hỗ trợ responsive đầy đủ trên cả ba nhóm kích thước màn hình: máy tính, máy tính bảng và điện thoại di động. Menu điều hướng, danh sách món ăn (dạng lưới) và trang chi tiết (bố cục hai cột) đều tự động điều chỉnh theo chiều rộng màn hình.
+## 13. Tài liệu tham khảo
 
-## Ghi chú về hình ảnh
-
-Hình ảnh món ăn hiện được tham chiếu bằng đường dẫn (URL) trực tiếp trong `data.js`, không lưu trong thư mục dự án. Trong quá trình thực hiện, đã thử lưu ảnh trên Google Drive và dẫn liên kết vào web nhưng ảnh không hiển thị được; giải pháp hiện tại là đăng ảnh lên nền tảng X (Twitter) và dùng liên kết ảnh trực tiếp từ đó. Đây là giải pháp tạm thời, có thể mất ổn định nếu nguồn ảnh thay đổi hoặc bị gỡ.
-
-## Hạn chế hiện tại
-
-- Dữ liệu được lưu tĩnh trong `data.js`, muốn thêm/sửa món ăn phải chỉnh sửa trực tiếp mã nguồn.
-- Hình ảnh phụ thuộc vào liên kết ngoài (xem mục Ghi chú về hình ảnh ở trên).
-- Chưa có trang quản trị nội dung.
-- Chưa hỗ trợ đa ngôn ngữ.
-- Chưa có giá tham khảo và địa chỉ quán ăn cụ thể cho từng món.
-
-
-## Hướng phát triển
-
-- Bổ sung giá tham khảo và địa chỉ quán ăn.
-- Thêm chức năng yêu thích món ăn bằng Local Storage.
-- Bổ sung dữ liệu JSON riêng hoặc kết nối API.
-- Thêm sắp xếp theo tên và đánh giá.
-- Bổ sung hình ảnh cục bộ để website hoạt động ổn định khi không có Internet hoặc khi nguồn ảnh bên ngoài thay đổi.
+- W3Schools, HTML, CSS và JavaScript documentation.
+- MDN Web Docs, JavaScript DOM and Event handling.
+- Khái niệm về Single Page Application (SPA).
+- Hash routing trong ứng dụng web đơn trang.
+- Cách lưu trữ và xử lý dữ liệu tĩnh bằng JavaScript/JSON.

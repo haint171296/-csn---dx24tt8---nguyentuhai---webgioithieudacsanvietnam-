@@ -1,4 +1,4 @@
-# Đặc sản Việt Nam
+# Website giới thiệu món ăn đặc sản Việt Nam
 
 Website đơn trang giới thiệu các món ăn đặc sản của ba miền Việt Nam. Bài được xây dựng bằng HTML, CSS và JavaScript thuần, không dùng framework hoặc cơ sở dữ liệu.
 

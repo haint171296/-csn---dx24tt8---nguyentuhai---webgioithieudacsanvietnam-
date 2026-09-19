@@ -51,7 +51,7 @@ Mỗi món ăn có một đường dẫn riêng dạng `#/mon/ten-mon`. Trang ch
 ## Cấu trúc thư mục
 
 ```text
-am-thuc-viet-nam/
+webmonanvn/
 ├── index.html   # Khung HTML chính của website
 ├── style.css    # Toàn bộ giao diện desktop
 ├── app.js       # Router, render giao diện, tìm kiếm, lọc và phân trang
@@ -75,7 +75,7 @@ Nháy đúp vào file `index.html` để mở website trên trình duyệt.
 
 ### Dùng Live Server trong VS Code
 
-1. Mở thư mục `haint` bằng VS Code.
+1. Mở thư mục `webmonanvn` bằng VS Code.
 2. Nhấn chuột phải vào `index.html`.
 3. Chọn **Open with Live Server**.
 

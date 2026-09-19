@@ -19,5 +19,9 @@ Tuần 3.
 - Hoàn thiện tương tác | Xử lý tìm kiếm không dấu, lọc theo vùng miền, phân trang, render nội dung và điều hướng trong `app.js`.
 - Đã làm xong phần tìm kiếm không dấu, lọc ba miền và phân trang 8 món.
 - Tuần này cuối tuần có lịch trực ở công ty nên sẽ không có thời gian nhiều, dự định trong tuần sau sẽ bổ sung responsive cho màn hình mobile.
--
+Tuần 4&5.
+    Ngày 15/09/2026
+- Responsive | Bổ sung bố cục cho tablet/mobile, kiểm tra ảnh, alt text, tiêu đề, bàn phím, trạng thái rỗng và lỗi đường dẫn.
+- Website đã cơ bản hoạt động tốt trên các kích thước màn hình và có trải nghiệm truy cập đầy đủ.
+
 

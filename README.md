@@ -8,7 +8,7 @@ Website giới thiệu các món ăn đặc sản của ba miền Việt Nam. B�
  - Sinh viên: Nguyễn Tư Hải
  - MSSV: 170124879
  - Lớp: DX24TT8
- - Khoa: Công Nghệ Thông Tin
+ - Ngành: Công Nghệ Thông Tin
  - GVHD: Phạm Thị Trúc Mai
 ## Mục tiêu bài
 

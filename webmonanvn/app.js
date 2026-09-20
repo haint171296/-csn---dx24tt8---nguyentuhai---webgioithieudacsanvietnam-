@@ -27,6 +27,7 @@ function escapeHtml(value) {
 		.replace(/"/g, '&quot;')
 		.replace(/'/g, '&#39;');
 }
+
 function card(item) {
 	return `<article class="card"><img class="card-image" src="${item.image}" alt="${item.name}" loading="lazy"><div class="card-body"><div class="tags"><span>${item.regionName}</span><span class="rating">★ ${item.rating}</span></div><h3>${item.name}</h3><p>${item.description}</p><a href="#/mon/${item.id}">Khám phá món ăn →</a></div></article>`;
 }

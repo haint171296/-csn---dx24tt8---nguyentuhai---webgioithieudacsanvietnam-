@@ -19,6 +19,14 @@ function normalizeText(text) {
 		.toLocaleLowerCase('vi');
 }
 
+function escapeHtml(value) {
+	return String(value)
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#39;');
+}
 function card(item) {
 	return `<article class="card"><img class="card-image" src="${item.image}" alt="${item.name}" loading="lazy"><div class="card-body"><div class="tags"><span>${item.regionName}</span><span class="rating">★ ${item.rating}</span></div><h3>${item.name}</h3><p>${item.description}</p><a href="#/mon/${item.id}">Khám phá món ăn →</a></div></article>`;
 }
@@ -42,7 +50,7 @@ function home() {
 		(!q || normalizeText(`${x.name} ${x.place} ${x.regionName} ${x.description}`).includes(q))
 	);
 
-	app.innerHTML = `<section class="hero"><div class="hero-content"><span class="eyebrow">Ẩm thực Việt Nam</span><h1>Hương vị quê nhà,<br>gói trọn ba miền.</h1><p>Khám phá những món ngon trứ danh, nơi mỗi hương vị đều kể một câu chuyện về vùng đất Việt Nam.</p><form class="search-box" id="searchForm"><input id="searchInput" value="${state.query}" placeholder="Tìm món ăn, địa danh..." aria-label="Tìm kiếm đặc sản"><button>Tìm kiếm</button></form></div></section>${results(items)}`;
+	app.innerHTML = `<section class="hero"><div class="hero-content"><span class="eyebrow">Ẩm thực Việt Nam</span><h1>Hương vị quê nhà,<br>gói trọn ba miền.</h1><p>Khám phá những món ngon trứ danh, nơi mỗi hương vị đều kể một câu chuyện về vùng đất Việt Nam.</p><form class="search-box" id="searchForm"><input id="searchInput" value="${escapeHtml(state.query)}" placeholder="Tìm món ăn, địa danh..." aria-label="Tìm kiếm đặc sản"><button type="submit">Tìm kiếm</button></form></div></section>${results(items)}`;
 	bindList();
 }
 

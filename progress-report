@@ -82,8 +82,26 @@ Thông tin chung
 	- Tối ưu giao diện responsive và thêm hiệu ứng.
 	- Bổ sung bố cục cho tablet và mobile.
 	- Kiểm tra hình ảnh, `alt` text, tiêu đề, thao tác bằng bàn phím, trạng thái rỗng và các đường dẫn lỗi.
-    - - Chỉnh sửa những lỗi đã phát hiện trong `README.md`.
+    - Chỉnh sửa những lỗi đã phát hiện trong `README.md`.
 	- Upload source code lên GitHub.
 - Kết quả: Việc chuyển trang và nhận tham số URL ổn định hơn; giao diện hoạt động tốt trên nhiều kích thước màn hình và có trải nghiệm truy cập đầy đủ.
 - Khó khăn: Cần xử lý các trường hợp URL thiếu hoặc sai tham số.
 - Kế hoạch tuần sau: Cải thiện hiệu suất, cập nhật tài liệu và tổng kết đồ án.
+
+	Tuần 6: Tối ưu, hoàn thiện tài liệu và tổng kết
+
+- Thời gian: 20/09/2026 - 26/09/2026
+- Mục tiêu: Hoàn thiện sản phẩm và chuẩn bị phiên bản tổng kết.
+- Công việc thực hiện:
+	- Cải thiện hiệu suất tải trang với lazy loading hình ảnh.
+	- Cập nhật tài liệu `README.md`.
+	- Dọn dẹp mã nguồn và tổng kết đồ án.
+- Kết quả: Hoàn thiện phiên bản demo, tài liệu dự án và mã nguồn trước khi nộp.
+- Khó khăn: Cần kiểm tra lại toàn bộ chức năng sau khi tối ưu để tránh phát sinh lỗi.
+- Kế hoạch tiếp theo: Tiếp nhận góp ý và sửa đổi nếu cần.
+
+Tổng kết sau 6 tuần
+
+Sau 6 tuần, em đã xây dựng được ứng dụng web đơn trang bằng HTML, CSS và JavaScript thuần. 
+Ứng dụng hỗ trợ giới thiệu món ăn theo vùng miền, tìm kiếm, lọc, phân trang, điều hướng SPA và xem thông tin chi tiết. 
+Qua đề tài, em hiểu rõ hơn về cách tổ chức một dự án web, xử lý dữ liệu và xây dựng giao diện tương tác.

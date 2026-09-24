@@ -149,7 +149,9 @@ function regionPage(region) {
       </div>
     </section>
     ${results(
-      specialties.filter(x => x.region === region),
+      specialties.filter(
+        x => x.region === region
+      ),
       `Đặc sản ${regionLabels[region]}`
     )}
   `;
@@ -228,7 +230,9 @@ function router() {
 
   if (route.startsWith('mon/')) {
     detail(route.slice(4));
-  } else if (['mien-bac', 'mien-trung', 'mien-nam'].includes(route)) {
+  } else if (
+    ['mien-bac', 'mien-trung', 'mien-nam'].includes(route)
+  ) {
     regionPage(route);
   } else {
     state.query = '';
